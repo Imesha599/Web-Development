@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <title>document</title>
+</head>
+
+<body>
+    <h1>CREATE AN ACCOUNT</h1>
+    <form onsubmit="return validateForm()">
+	<div class "container">
+	<div class="left-container">
+        <div class="field">
+	           <label class="title title-req">FIRST NAME : <span>*</span></label>
+	           <input type="text" id="fname" placeholder="Enter First Name" required maxlength="30">
+	   </div>
+	   
+	   
+         <br>
+	   
+        <div class="field">
+	           <label class="title title-req">LAST NAME : <span>*</span></label>
+	           <input type="text" id="lname" placeholder="Enter Last Name" required maxlength="30">
+	   </div>
+	    <br>
+		
+	    <div class="field">
+	           <label class="title title-req">GENDER : <span>*</span></label>
+			   
+	   <br>
+	   <br>
+	   
+	   <input type="radio" name="gender" value="male"> Male
+       <input type="radio" name="gender" value="female"> Female
+       <input type="radio" name="gender" value="other"> Other
+        </div>
+		<br>
+		
+	    <div class="field">
+	           <label class="title title-req">DATE OF BIRTH : <span>*</span></label>
+	           <input type="date" name="bday" id="bday" required onchange="Calage()">
+	   </div>
+	   <br>
+	   
+	  <div class="field">
+	           <label class="title title-req">AGE : <span>*</span></label>
+	           <input type="number" name="age" id="age" required disabled>
+	  </div>
+	  <br>
+	   
+	    <div class="field">
+	           <label class="title title-req">ADDRESS: <span>*</span></label>
+	           <input type="text" placeholder="Enter current Address"name="add" id="add">
+	   </div>
+	   </br>
+	   
+	   </br>
+	  
+	    <div class="field">
+	           <label class="title title-req">EMAIL ADDRESS: <span>*</span></label>
+	           <input type="email" name="email" id="email"placeholder="Enter valid Email address"required onchange="validateEmail()">
+	   </div>
+	   </br>
+	   
+	    
+	    <div class="field">
+	           <label class="title title-req">USER NAME: <span>*</span></label>
+	           <input type="text" name="username" id= "username"required onchange="userName()">
+	   </div>
+	   </br>
+	   
+	    
+	    <div class="field">
+	           <label class="title title-req">PASSWORD: <span>*</span></label>
+	           <input type="password" name="password" id="pwd"required onchange="pwdValidation()">
+	   </div>
+	   </br>
+			   
+	    <div class="field">
+	           <label class="title title-req">CONFIRM PASSWORD: <span>*</span></label>
+	           <input type="password" name="confo-pwd" placeholder="Re-Type your password"id="confo-pwd"required onchange="pwdMatch()">
+	   </div>
+	   </br>
+	   
+	    
+        <input type="checkbox" name="ag" id="ag" required onchange="condition()">
+        <label>I agree into the term and conditions</label>
+        <br>
+        <br>
+
+        <input type="submit" value="submit" style="font-size:15pt;color:white;background-color:green;padding:3px"  id="su-button" disabled>
+        <div id="error" class="hide"></div>
+    </form>
+</body>
+
+</html>
