@@ -1,1 +1,1 @@
-Acquired skills in JavaScript for website development. Developed a page for users to self-register and created an account to login to the system. 
+Acquired skills in HTML, CSS and JavaScript for website development. Developed a page for users to self-register. 
